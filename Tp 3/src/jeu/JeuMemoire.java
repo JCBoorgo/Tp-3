@@ -17,7 +17,7 @@ public class JeuMemoire implements Memorable {
 	private VecteurFormes vecteurFormes = null;
 	private Forme[][] grilleDeJeu = null;
 	
-	public jeuMemoire(){
+	public JeuMemoire(){
 		//TODO
 	}
 	

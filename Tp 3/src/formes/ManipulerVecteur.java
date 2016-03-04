@@ -1,5 +1,7 @@
 package formes;
 
+import java.util.ArrayList;
+
 public interface ManipulerVecteur {
 	public ArrayList<Forme> getVecteur();
 	@Override

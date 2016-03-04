@@ -90,10 +90,9 @@ abstract public class Forme implements Comparable<Forme> {
 	public String toString() {
 		return (getNom() + " " + getCouleur());
 	}
-	
-	public String toStringCourt(){
-		return null;
-		//TODO
+
+	public String toStringCourt() {
+		return (getNom() + " " + getCouleur());
 	}
 
 	/**
@@ -107,8 +106,10 @@ abstract public class Forme implements Comparable<Forme> {
 		}
 		return valeur;
 	}
-	
-	public void setNom(String nom){
-		//TODO
+
+	public void setNom(String nom) {
+		if (nom != null) {
+			this.nom = nom;
+		}
 	}
 }
