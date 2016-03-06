@@ -1,5 +1,10 @@
 package formes;
 
+/**
+ * Classe qui gère les vecteurs de Forme
+ * @author Jean-Christophe Bourgault et David-Alexandre Deshaies-Lévesque
+ * @version 0.0.0
+ */
 import java.util.ArrayList;
 
 import exceptions.FormeException;
@@ -7,14 +12,29 @@ import exceptions.FormeException;
 public class VecteurFormes implements ManipulerVecteur {
 	private ArrayList<Forme> vecteur = null;
 
+	/**
+	 * Constructeur des VecteurFormes
+	 */
 	public VecteurFormes() {
 		vecteur = new ArrayList<Forme>();
 	}
 
+	/**
+	 * Valide si le nombre passé en paramètre est positif
+	 * 
+	 * @param pNbrFormes
+	 * @return vrai si le nombre en paramètre est positif
+	 */
 	private boolean validerNbrFormes(int pNbrFormes) {
 		return (pNbrFormes >= 0);
 	}
 
+	/**
+	 * Génère autant de formes que demandées dans le paramètre. Les attributs
+	 * des formes sont distribués uniformément.
+	 * 
+	 * @param nbrFormes
+	 */
 	public void remplir(int nbrFormes) {
 		if (validerNbrFormes(nbrFormes)) {
 			int formesFaites = 0;
@@ -53,15 +73,22 @@ public class VecteurFormes implements ManipulerVecteur {
 		}
 	}
 
+	/**
+	 * Génère une chaîne comportant le nom et la couleur de chaque forme du
+	 * vecteur
+	 */
 	@Override
 	public String toString() {
 		String s = "";
-		for (int i = 0; i < vecteur.size()-1; i++) {
+		for (int i = 0; i < vecteur.size() - 1; i++) {
 			s += vecteur.get(i).toStringCourt();
 		}
 		return s;
 	}
 
+	/**
+	 * Trie le vecteur en utilisant son compareTo
+	 */
 	public void trier() {
 		boolean changement = false;
 		do {
@@ -75,6 +102,10 @@ public class VecteurFormes implements ManipulerVecteur {
 		} while (changement = true);
 	}
 
+	/**
+	 * Mélange le vecteur en permutant deux éléments [nombre d'éléments dans le
+	 * vecteur multiplié par 10] fois
+	 */
 	public void melanger() {
 		int nbrFois = vecteur.size() * 10; // nombre de fois arbitraire
 		for (int i = 0; i < nbrFois; i++) {
@@ -84,12 +115,23 @@ public class VecteurFormes implements ManipulerVecteur {
 		}
 	}
 
+	/**
+	 * Échange les éléments aux indices passés en paramètre
+	 * 
+	 * @param premier
+	 * @param dernier
+	 */
 	private void permuter(int premier, int dernier) {
 		Forme temp = this.vecteur.get(dernier);
 		this.vecteur.set(dernier, this.vecteur.get(premier));
 		this.vecteur.set(premier, temp);
 	}
 
+	/**
+	 * Retourne une référence vers le vecteur
+	 * 
+	 * @return pointeur vers le vecteur
+	 */
 	public ArrayList<Forme> getVecteur() {
 		return this.vecteur;
 	}

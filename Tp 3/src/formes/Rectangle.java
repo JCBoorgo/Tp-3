@@ -2,7 +2,7 @@ package formes;
 
 /**
  * Classe qui permet de générer et gérer des rectangles
- * @author Jean-Christophe Bourgault
+ * @author Jean-Christophe Bourgault et David-Alexandre Deshaies-Lévesque
  * @version 0.0.0
  */
 import exceptions.FormeException;
@@ -12,7 +12,6 @@ public class Rectangle extends Forme {
 	private int hauteur = 1;
 	private int largeur = 1;
 
-	// TODO Javadoc à éditer
 	/**
 	 * Constructeur des rectangles, qui prend la hauteur et la largeur passées
 	 * en paramètres, et met le nom "Rectangle"

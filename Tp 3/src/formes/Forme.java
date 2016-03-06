@@ -2,7 +2,7 @@ package formes;
 
 /**
  * Classe abstraite qui gère les formes
- * @author Jean-Christophe Bourgault
+ * @author Jean-Christophe Bourgault et David-Alexandre Deshaies-Lévesque
  * @version 0.0.0
  */
 import exceptions.FormeException;
@@ -91,6 +91,10 @@ abstract public class Forme implements Comparable<Forme> {
 		return (getNom() + " " + getCouleur());
 	}
 
+	/**
+	 * Retourne le nom et la couleur de la forme
+	 * @return nom et couleur de la forme
+	 */
 	public String toStringCourt() {
 		return (getNom() + " " + getCouleur());
 	}
@@ -107,6 +111,10 @@ abstract public class Forme implements Comparable<Forme> {
 		return valeur;
 	}
 
+	/**
+	 * Change le nom de la forme
+	 * @param nom
+	 */
 	public void setNom(String nom) {
 		if (nom != null) {
 			this.nom = nom;

@@ -1,5 +1,9 @@
 package formes;
-
+/**
+ * Interface de méthodes pour manipuler des ArrayList de Forme
+ * @author Jean-Christophe Bourgault et David-Alexandre Deshaies-Lévesque
+ * @version 0.0.0
+ */
 import java.util.ArrayList;
 
 public interface ManipulerVecteur {

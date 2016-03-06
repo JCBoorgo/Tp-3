@@ -3,7 +3,7 @@ package formes;
 /**
  * Classe qui permet de générer et gérer des cercles
  * 
- * @author Jean-Christophe Bourgault
+ * @author Jean-Christophe Bourgault et David-Alexandre Deshaies-Lévesque
  * @version 0.0.0
  */
 import exceptions.FormeException;

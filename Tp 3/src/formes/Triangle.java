@@ -1,5 +1,9 @@
 package formes;
-
+/**
+ * Classe qui permet de générer et gérer des triangles
+ * @author Jean-Christophe Bourgault et David-Alexandre Deshaies-Lévesque
+ * @version 0.0.0
+ */
 import exceptions.FormeException;
 
 public class Triangle extends Forme {
@@ -7,7 +11,6 @@ public class Triangle extends Forme {
 	private int coteB = 0;
 	private int coteC = 0;
 
-	// TODO: JAVADOC
 	/**
 	 * Constructeur des triangles, prend les trois côtés en paramètre et crée le
 	 * triangle s'il est valide. Assigne aussi le nom "Triangle"

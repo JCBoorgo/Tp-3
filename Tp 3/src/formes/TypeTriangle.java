@@ -3,7 +3,7 @@ package formes;
 /**
  * Énumération qui gère les différents types de triangle
  * 
- * @author Jean-Christophe Bourgault
+ * @author Jean-Christophe Bourgault et David-Alexandre Deshaies-Lévesque
  * @version 0.0.0
  */
 public enum TypeTriangle {
