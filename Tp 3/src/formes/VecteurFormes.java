@@ -82,6 +82,7 @@ public class VecteurFormes implements ManipulerVecteur {
 		String s = "";
 		for (int i = 0; i < vecteur.size() - 1; i++) {
 			s += vecteur.get(i).toStringCourt();
+			s += "|";
 		}
 		return s;
 	}
